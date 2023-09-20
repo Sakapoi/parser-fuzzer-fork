@@ -285,4 +285,6 @@ str = { "\"" ~ (!"\"" ~ ANY)* ~ "\"" }
 
 WHITESPACE = _{ " " | "\t" | "\n" }
 
-COMMENT = _{ "//" ~ (!"\n" ~ ANY)* }
+doc_comment = { "///" ~ (!"\n" ~ ANY)* }
+
+COMMENT = { "//" ~ (!"\n" ~ ANY)* }
