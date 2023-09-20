@@ -1,1 +1,0 @@
-fn foo<Bar>(bar: [Bar; (123)]) {}
